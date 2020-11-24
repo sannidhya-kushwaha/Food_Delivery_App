@@ -1,4 +1,5 @@
 import 'package:Food_Delivery_App/models/restaurant.dart';
+import 'package:Food_Delivery_App/screens/cart_screen.dart';
 import 'package:Food_Delivery_App/screens/restaurant_screen.dart';
 import 'package:Food_Delivery_App/widgets/rating_stars.dart';
 import 'package:flutter/material.dart';
@@ -118,7 +119,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontSize: 20.0,
               ),
             ),
-            onPressed: () {},
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => CartScreen(),
+              ),
+            ),
           ),
         ],
       ),
