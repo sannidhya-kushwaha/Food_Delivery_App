@@ -44,51 +44,53 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Hero(
                     tag: restaurant.imageUrl,
                     child: Image(
-                      height: 150.0,
-                      width: 150.0,
+                      height: 130.0,
+                      width: 130.0,
                       fit: BoxFit.cover,
                       image: AssetImage(restaurant.imageUrl),
                     ),
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.all(12.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        restaurant.name,
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(12.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          restaurant.name,
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          overflow: TextOverflow.ellipsis,
                         ),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      RatingStars(restaurant.rating),
-                      SizedBox(
-                        height: 4.0,
-                      ),
-                      Text(
-                        restaurant.address,
-                        style: TextStyle(
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w600,
+                        RatingStars(restaurant.rating),
+                        SizedBox(
+                          height: 4.0,
                         ),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      SizedBox(
-                        height: 4.0,
-                      ),
-                      Text(
-                        '0.2 miles away',
-                        style: TextStyle(
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w600,
+                        Text(
+                          restaurant.address,
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          overflow: TextOverflow.ellipsis,
                         ),
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ],
+                        SizedBox(
+                          height: 4.0,
+                        ),
+                        Text(
+                          '0.2 miles away',
+                          style: TextStyle(
+                            fontSize: 14.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ],
