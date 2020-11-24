@@ -1,6 +1,12 @@
 # Food_Delivery_App
 
-A new Flutter project.
+<img src="https://user-images.githubusercontent.com/73152930/100080924-6de4f800-2e6c-11eb-8b9c-099ea2bdf48e.png" width="300">
+<img src="https://user-images.githubusercontent.com/73152930/100082129-d97b9500-2e6d-11eb-8c35-026c444e6723.png" width="300">
+<img src="https://user-images.githubusercontent.com/73152930/100082137-daacc200-2e6d-11eb-8a90-67e4cb9647d1.png" width="300">
+<img src="https://user-images.githubusercontent.com/73152930/100084805-3e84ba00-2e71-11eb-967e-6aea5c2586dd.gif" width="300">
+
+
+Food Delivery app UI created using Flutter.
 
 ## Getting Started
 
